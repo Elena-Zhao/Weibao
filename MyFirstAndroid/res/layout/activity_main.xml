@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+  
+    <TabHost 
+    android:id="@android:id/tabhost"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:layout_alignParentLeft="true"  
+    android:layout_centerVertical="true" >  
+  
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" 
+        android:gravity="bottom">
+        
+        <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0"/>
+              <!--
+            <fragment
+                android:id="@+id/tab_weibao"
+                android:name="com.example.myfirstandroid.WeibaoFragment"
+                android:layout_width="match_parent"
+                android:layout_height="296dp" />
+              
+            <fragment android:name="com.example.myfirstandroid.FindFragment"  
+                android:id="@+id/tab_find"  
+                android:layout_width="match_parent"  
+                android:layout_height="wrap_content"
+                />  
+              !-->   
+              <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+       <TabWidget  
+            android:id="@android:id/tabs"  
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content" 
+            android:layout_gravity="bottom"
+            android:background="@drawable/tabbar_bg"
+            android:showDividers="none"
+            >  
+        </TabWidget>  
+   
+    </LinearLayout>  
+</TabHost>  
+
+</LinearLayout>

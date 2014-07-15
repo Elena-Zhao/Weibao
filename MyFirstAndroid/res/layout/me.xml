@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/user_bg"
+        android:orientation="vertical" >
+    	<FrameLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" 
+	    android:layout_marginTop="5dp">    
+
+	    <ImageButton
+	        android:id="@+id/edit_person_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_gravity="right"
+	        android:src="@color/edit_btn" 
+            android:background="@android:color/transparent"
+	        />
+
+	<LinearLayout 
+    	    android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="vertical"
+    		android:gravity="center">
+    		<ImageView
+    		    android:id="@+id/user_image"
+    		    android:layout_width="50dp"
+    		    android:layout_height="50dp"
+    		    android:layout_marginTop="5dp"
+    		    />
+	
+    	<TextView 
+    	        android:id="@+id/me_user_name"
+    	        android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:textColor="#fff"
+    			android:text="horace king"
+    			android:drawablePadding="3dp"
+    			android:layout_marginTop="5dp"
+    			android:layout_gravity="center_vertical|center_horizontal"
+    			android:gravity="center_vertical|center_horizontal"/>
+    	</LinearLayout>
+    	</FrameLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:layout_gravity="center_vertical|center_horizontal"
+    		android:gravity="center_vertical|center_horizontal">
+            <TextView 
+    	        android:id="@+id/user_gender"
+    	        android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:textColor="#fff"
+    			android:text="女"
+    			android:layout_marginRight="10dp"
+    			/>
+            <TextView 
+    	        android:id="@+id/user_location"
+    	        android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:textColor="#fff"
+    			android:text="上海"
+    			/>
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:gravity="center_vertical|center_horizontal">
+            <TextView 
+    	        android:id="@+id/user_signature"
+    	        android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:textColor="#fff"
+    			android:text=""
+    			android:layout_marginLeft="10dp"
+    			android:layout_marginRight="10dp"
+    			android:layout_marginBottom="10dp"
+    			android:layout_marginTop="5dp"
+    			/>
+        </LinearLayout>
+    </LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    >
+    <TextView
+        android:id="@+id/edit_bills_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+    	android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="@string/my_bills" 
+        android:textColor="#050809"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/bills_icon"
+    	android:drawablePadding="15dp"
+    	android:drawableRight="@drawable/goto_icon"
+        />
+    <TextView android:layout_width="fill_parent"
+    	android:layout_height="2dp"
+    	android:layout_marginTop="10dp"
+    	android:layout_marginBottom="10dp"
+    	android:background="#3fa8de"
+    	android:focusable="false"
+    />
+    <TextView
+        android:id="@+id/edit_settings_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+    	android:paddingRight="@dimen/activity_horizontal_margin"
+        android:text="@string/my_settings"
+        android:textColor="#050809"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/settings_icon"
+    	android:drawablePadding="15dp" 
+    	android:drawableRight="@drawable/goto_icon"
+        />
+    <TextView android:layout_width="fill_parent"
+    	android:layout_height="2dp"
+    	android:layout_marginTop="10dp"
+    	android:layout_marginBottom="10dp"
+    	android:background="#3fa8de"
+    	android:focusable="false"
+ />
+ </LinearLayout>
+
+
+</LinearLayout>

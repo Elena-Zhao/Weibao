@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myfirstandroid"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 使用网络功能所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- SDK离线地图和cache功能需要读写外部存储器 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" >
+    </uses-permission>
+    <!-- 获取设置信息和详情页直接拨打电话需要以下权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+    <!-- 使用定位功能所需权限,demo已集成百度定位SDK,不使用定位功能可去掉以下6项 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature android:name="android.hardware.screen.landscape" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <!-- This excludes Google TV, which is unfortunately included by virtue of not requiring a camera -->
+    <uses-feature android:name="android.hardware.touchscreen" />
+    <!-- TODO make this not required again after android.hardware.camera.any is available -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.example.myfirstandroid.WeiBaoApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/CustomActionBarTheme" >
+        <activity
+            android:name="com.example.myfirstandroid.LogInActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoSlideTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.myfirstandroid.DisplayMessageActivity"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName="com.example.myfirstandroid.LogInActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstandroid.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.baidu.mapapi.search.PlaceCaterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.myfirstandroid.SignUpActivity"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+        <activity
+            android:name="MainActivity"
+            android:label="@string/title_activity_main"
+            android:parentActivityName="com.example.myfirstandroid.LogInActivity"
+            android:theme="@style/NoSlideTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstandroid.LogInActivity" />
+        </activity>
+        <activity
+            android:name="com.example.myfirstandroid.FindPasswordActivity"
+            android:label="@string/title_activity_find_password" >
+        </activity>
+        <activity
+            android:name="com.example.find.McActivity"
+            android:label="@string/all_bussiness" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.example.find.McNearbyActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/nearby_bussiness"
+            android:screenOrientation="sensor" >
+        </activity>
+        <activity
+            android:name="com.example.find.SubscribedMcActivity"
+            android:label="@string/subscription_bussiness" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.example.find.ShowMcInfoActivity"
+            android:label="@string/info_bussiness" >
+        </activity>
+        <activity
+            android:name="com.zxing.activity.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+        <activity
+            android:name="com.example.me.profile4thTabActivity"
+            android:label="个人信息" >
+        </activity>
+        <activity
+            android:name="com.example.me.settings4thTabActivity"
+            android:label="设置" >
+        </activity>
+        <activity
+            android:name="com.example.me.bill4thTabActivity"
+            android:label="我的账单" >
+        </activity>
+        <activity
+            android:name="com.example.AccountActivities.EditMyImageActivity"
+            android:label="我的头像" >
+        </activity>
+        <activity
+            android:name="com.example.EditProfileActivities.EditDistrictActivity"
+            android:label="选择地区" >
+        </activity>
+        <activity
+            android:name="com.example.EditProfileActivities.EditGenderActivity"
+            android:label="性别" >
+        </activity>
+        <activity
+            android:name="com.example.EditProfileActivities.EditNameActivity"
+            android:label="更改名字" >
+        </activity>
+        <activity
+            android:name="com.example.EditProfileActivities.EditSignatureActivity"
+            android:label="个性签名" >
+        </activity>
+        <activity
+            android:name="com.example.AccountActivities.MyAccountActivity"
+            android:label="我的账号" >
+        </activity>
+        <activity
+            android:name="com.example.AccountActivities.ShowBitmapCardActivity"
+            android:label="二维码名片" >
+        </activity>
+        <activity android:name="com.example.AccountActivities.boundEmailActivity" >
+        </activity>
+        <activity android:name="com.example.find.ShowMcPrefInfoActivity" >
+        </activity>
+        <activity android:name="com.example.find.NotificationActivity" >
+        </activity>
+        <activity android:name="com.example.find.ShowMcPrefListActivity" >
+        </activity>
+        <activity
+            android:name="com.example.AccountActivities.changePasswordActivity"
+            android:label="修改密码" >
+        </activity>
+    </application>
+
+</manifest>

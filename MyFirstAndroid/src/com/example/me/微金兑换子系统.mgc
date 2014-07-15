@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.example.myfirstandroid.MainActivity.TabInfo"
+        x="420" y="369">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.example.myfirstandroid.MainActivity" x="81" y="359">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.example.myfirstandroid.ScanFragment"
+            endpointName="sf" kind="Simple"/>
+        <Association
+            destinationClassName="com.example.myfirstandroid.MainActivity.TabInfo"
+            endpointName="mapTabInfo" kind="Simple"/>
+    </Class>
+    <Class name="com.example.me.bill4thTabActivity.FindBill" x="648" y="619">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.example.entity.WeiJinEntity"
+            endpointName="result" kind="Simple"/>
+    </Class>
+    <Class name="com.example.myfirstandroid.ScanFragment" x="164" y="-55">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.example.myfirstandroid.MainActivity"
+            endpointName="mactivity" kind="Simple"/>
+    </Class>
+    <Class name="com.example.me.bill4thTabActivity" x="94" y="627">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.example.entity.WeiJinEntity"
+            endpointName="billList" kind="Simple"/>
+        <Association
+            destinationClassName="com.example.me.MyBillListAdapter"
+            endpointName="adapter" kind="Simple"/>
+    </Class>
+    <Class name="com.example.entity.WeiJinEntity" x="642" y="284">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.example.me.MyBillListAdapter" x="458" y="637">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.example.me.bill4thTabActivity"
+            endpointName="context" kind="Simple"/>
+        <Association
+            destinationClassName="com.example.entity.WeiJinEntity"
+            endpointName="list" kind="Simple"/>
+        <Communication destinationClassName="com.example.me.bill4thTabActivity"/>
+        <Communication destinationClassName="com.example.entity.WeiJinEntity"/>
+    </Class>
+    <Class name="com.example.me.bill4thTabActivity.Exchange" x="747" y="604">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.example.entity.WeiJinEntity"
+            endpointName="item" kind="Simple"/>
+    </Class>
+    <Class name="com.example.myfirstandroid.ScanFragment.AddWeijin"
+        x="86" y="81">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+</ClassDiagram>

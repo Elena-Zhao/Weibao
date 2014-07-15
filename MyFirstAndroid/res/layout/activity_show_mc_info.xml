@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/detail_bg"
+    android:orientation="vertical"
+    
+    >
+	<ImageView 
+	    android:paddingTop="10dp"
+                android:src="@drawable/nip"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_gravity="right|top"
+                />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarStyle="outsideOverlay"
+        android:paddingTop="40dp"
+    	android:paddingLeft="35dp"
+    	android:paddingRight="35dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/mc_logo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="8dp"
+                    android:onClick="head_xiaohei"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/mc_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="110dp"
+                    android:paddingTop="15dp"
+                    android:text="必胜客"
+                    android:textColor="#2181b2"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/mc_slogen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="110dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="10dp"
+                    android:text="Pizza and More~~~"
+                    android:textColor="#CCC725"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="8dp"
+                        android:text="商户地址"
+                        android:textColor="#2181b2"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/mc_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80dp"
+                        android:padding="8dp"
+                        android:text="上海市嘉定区安亭镇xxxx"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="8dp"
+                        android:text="联系电弧"
+                        android:textColor="#2181b2"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/mc_telephone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80dp"
+                        android:padding="8dp"
+                        android:text="021-12345678"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:padding="8dp"
+                        android:text="商户简介"
+                        android:textColor="#2181b2"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/mc_intro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80dp"
+                        android:padding="8dp"
+                        android:text="必胜客天天半价，天天都有新惊喜，学生证八折哦"
+                        android:textColor="#000"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+				<TextView android:layout_width="fill_parent"
+    			android:layout_height="1dp"
+    			android:background="#6dcefe"
+    			android:focusable="false"
+    			android:layout_marginTop="5dp"
+    			android:layout_marginBottom="5dp"/>
+                <TextView
+                    android:id="@+id/go_mc_pref"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="15dp"
+                    android:drawableRight="@drawable/goto_icon"
+                    android:gravity="center_vertical"
+                    
+                    android:paddingLeft="6dp"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:text="最新优惠"
+                    android:textColor="#2181b2"
+                    android:textSize="17sp"/>
+<TextView android:layout_width="fill_parent"
+    			android:layout_height="1dp"
+    			android:background="#6dcefe"
+    			android:focusable="false"
+    			android:layout_marginTop="5dp"
+    			android:layout_marginBottom="5dp"/>
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical" >
+
+                    <Button
+                        android:id="@+id/subscribe"
+                        android:layout_width="160dp"
+                        android:layout_height="50dp"
+                        android:layout_marginBottom="14dp"
+                        android:layout_marginTop="34dp"
+                        android:background="@color/sub_button_bg"
+                        android:layout_centerInParent="true"
+                        android:onClick="subscribe_mc"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+  </FrameLayout>

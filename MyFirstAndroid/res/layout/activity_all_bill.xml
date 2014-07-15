@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar
+        android:id="@+id/wait_allbill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center"/>
+   
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    
+    >
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <Button 
+        android:id = "@+id/all_bill_btn"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="所有账单"
+    	android:textSize="15sp"
+    	android:background="@color/normal_tab"
+    	android:onClick="onAllBillClick"
+    	android:layout_weight="0.3"/>
+    <Button 
+        android:id = "@+id/unexchanged_bill_btn"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="未兑换账单"
+    	android:textSize="15sp"
+    	android:background="@color/normal_tab"
+    	android:onClick="onUnexchangedBillClick"
+    	android:layout_weight="0.3"/>
+    <Button 
+        android:id = "@+id/exchanged_all_bill_btn"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="已兑换账单"
+    	android:textSize="15sp"
+    	android:background="@color/normal_tab"
+    	android:onClick="onExchangedBillClick"
+    	android:layout_weight="0.3"/>
+    </LinearLayout>
+    
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:drawSelectorOnTop="false"
+        android:scrollbars="vertical" />
+
+</LinearLayout>
+</FrameLayout>

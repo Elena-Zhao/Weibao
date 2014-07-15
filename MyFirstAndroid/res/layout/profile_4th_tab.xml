@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+<FrameLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <ProgressBar
+        android:id="@+id/wait_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+	<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+
+
+        <RelativeLayout
+            android:id="@+id/row_image"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#24607F"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/imageSelfImage4thTab"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:contentDescription="@string/SelfImageContentsDiscription4thTab" 
+                android:src="@drawable/user_image"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/goto_icon_light"
+                android:layout_weight="1"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                 />
+                
+        </RelativeLayout>
+
+        
+     <TextView android:layout_width="fill_parent"
+    	android:layout_height="3dp"
+    	android:background="#163b4e"
+    	android:focusable="false"
+    />
+            
+            
+            
+        <LinearLayout
+            android:id="@+id/row_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/type_name"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/Name4thTab" 
+                android:textSize="20sp"
+                android:textColor="#3fa8de"
+                android:textStyle="bold"
+                android:layout_marginRight="20dp"
+                android:background="@color/me_info_item_bg"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/view_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/voidString"
+                android:textSize="20sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:animateLayoutChanges="true"
+                android:orientation="horizontal"
+            	android:id="@+id/view_hide"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:visibility="gone"  
+            	android:layout_gravity="center_vertical"
+            	android:layout_weight="1"
+            	>
+            	<EditText
+            	    android:inputType="textEmailAddress"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:hint="在这里输入新昵称"
+                	android:maxLength="12"
+                	android:maxEms="8"
+                	android:layout_marginRight="15dp"
+                	android:layout_weight="1"
+                />
+            	<ImageButton 
+            	    android:id="@+id/view_confirm"
+            	    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+            	    android:src="@color/me_info_confirm_btn"
+            	    android:background="@android:color/transparent"
+            	    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        
+    
+      <TextView android:layout_width="fill_parent"
+    	android:layout_height="3dp"
+    	android:background="#afdaff"
+    	android:focusable="false"
+    />
+        
+      <LinearLayout
+            android:id="@+id/row_gender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/type_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/Gender4thTab" 
+                android:textSize="20sp"
+                android:textColor="#3fa8de"
+                android:layout_marginRight="20dp"
+                android:background="@color/me_info_item_bg"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/view_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/voidString"
+                android:textSize="20sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:animateLayoutChanges="true"
+                android:orientation="horizontal"
+            	android:id="@+id/view_hide"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:visibility="gone"  
+            	android:layout_gravity="center_vertical"
+            	android:layout_weight="1"
+            	>
+            	<!--  <EditText
+            	    android:inputType="textEmailAddress"
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:hint="在这里输入新昵称"
+                	android:maxLength="12"
+                	android:maxEms="8"
+                	android:layout_marginRight="15dp"
+                	android:layout_weight="1"
+                />-->
+            	<RadioGroup 
+            	    android:id="@+id/radioGroup"
+            	    android:layout_width="wrap_content" 
+            	    android:layout_height="wrap_content"
+            	    android:orientation="horizontal"> 
+					<RadioButton 
+					    android:layout_width="wrap_content" 
+					    android:layout_height="wrap_content" 
+					    android:button="@color/checkbox_bg"
+					    android:id="@+id/radioMale" 
+					    android:text="男" >
+					    
+					</RadioButton> 
+					<RadioButton 
+					    android:layout_width="wrap_content" 
+					    android:layout_height="wrap_content" 
+					    android:button="@color/checkbox_bg"
+					    android:id="@+id/radioFemale" 
+					    android:text="女"
+					    android:checked="true"></RadioButton> 
+				</RadioGroup>
+				 
+            	<ImageButton 
+            	    android:id="@id/view_confirm"
+            	    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+            	    android:src="@color/me_info_confirm_btn"
+            	    android:background="@android:color/transparent"
+            	    android:layout_marginRight="10dp"
+            	    android:layout_weight="1"
+            	    android:layout_gravity="right"
+            	    />
+            </LinearLayout>
+        </LinearLayout>
+        
+        
+        
+        
+     <TextView android:layout_width="fill_parent"
+    	android:layout_height="3dp"
+    	android:background="#afdaff"
+    	android:focusable="false"
+    />
+      
+       <LinearLayout
+            android:id="@+id/row_signature"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/type_signature"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/Signature4thTab" 
+                android:textSize="20sp"
+                android:textColor="#3fa8de"
+                android:layout_marginRight="20dp"
+                android:background="@color/me_info_item_bg"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/view_show"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/voidString"
+                android:textSize="20sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:animateLayoutChanges="true"
+                android:orientation="horizontal"
+            	android:id="@+id/view_hide"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:visibility="gone"  
+            	android:layout_gravity="center_vertical"
+            	android:layout_weight="1"
+            	>
+            	<EditText
+                	android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+                	android:hint="在这里输入个性签名"
+                	android:maxLength="150"
+                	android:maxEms="8"
+                	android:layout_marginRight="15dp"
+                	android:layout_weight="1"
+                />
+            	<ImageButton 
+            	    android:id="@+id/view_confirm"
+            	    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+            	    android:src="@color/me_info_confirm_btn"
+            	    android:background="@android:color/transparent"
+            	    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        
+        
+        
+        
+     <TextView android:layout_width="fill_parent"
+    	android:layout_height="3dp"
+    	android:background="#afdaff"
+    	android:focusable="false"
+    />
+        
+      <LinearLayout
+            android:id="@+id/row_account"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/type_account"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/MyAccount4thTab" 
+                android:textSize="20sp"
+                android:textColor="#3fa8de"
+                android:layout_marginRight="20dp"
+                android:background="@color/me_info_item_bg"
+                android:gravity="center"
+                
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/textAccount4thTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/voidString"
+                android:textSize="20sp"
+                android:visibility="visible"
+                android:layout_weight="1" />
+            
+            	<ImageView
+            	    android:id="@+id/view_confirm"
+            	    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+            	    android:src="@drawable/goto_icon"
+            	    android:background="@android:color/transparent"
+            	    android:layout_marginRight="10dp"/>
+        </LinearLayout>
+        
+      <TextView android:layout_width="fill_parent"
+    	android:layout_height="3dp"
+    	android:background="#afdaff"
+    	android:focusable="false"
+    />
+
+      <LinearLayout
+            android:id="@+id/row_district"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+
+            <TextView
+                android:id="@+id/type_district"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/District4thTab" 
+                android:textSize="20sp"
+                android:textColor="#3fa8de"
+                android:layout_marginRight="20dp"
+                android:background="@color/me_info_item_bg"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/textDistrict4thTab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/voidString"
+                android:textSize="20sp"
+                android:visibility="visible"
+                android:layout_weight="1" />
+            
+            	<ImageView
+            	    android:id="@+id/view_confirm"
+            	    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+            	    android:src="@drawable/goto_icon"
+            	    android:background="@android:color/transparent"
+            	    android:layout_marginRight="10dp"/>
+        </LinearLayout>
+        
+        <TextView android:layout_width="fill_parent"
+    	android:layout_height="3dp"
+    	android:background="#afdaff"
+    	android:focusable="false"
+    />
+        
+        <LinearLayout
+            android:id="@+id/row_card"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/type_card"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="@string/BitmapCard4thTab" 
+                android:textSize="20sp"
+                android:textColor="#3fa8de"
+                android:layout_marginRight="20dp"
+                android:background="@color/me_info_item_bg"
+                android:paddingLeft="15dp"
+                android:textStyle="bold"
+                android:layout_weight="1" 
+                />
+            
+            	<ImageView
+            	    android:id="@+id/view_confirm"
+            	    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+            	    android:src="@drawable/goto_icon"
+            	    android:background="@android:color/transparent"
+            	    android:layout_marginRight="10dp"
+            	    android:layout_gravity="right"/>
+        </LinearLayout>
+      <TextView android:layout_width="fill_parent"
+    	android:layout_height="3dp"
+    	android:background="#afdaff"
+    	android:focusable="false"
+    />
+      
+      <LinearLayout
+            android:id="@+id/row_password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+            >
+
+            <TextView
+                android:id="@+id/type_password"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="修改密码" 
+                android:textSize="20sp"
+                android:textColor="#3fa8de"
+                android:layout_marginRight="20dp"
+                android:background="@color/me_info_item_bg"
+                android:paddingLeft="15dp"
+                android:textStyle="bold"
+                android:layout_weight="1" 
+                />
+            
+            	<ImageView
+            	    android:id="@+id/view_confirm"
+            	    android:layout_width="wrap_content"
+                	android:layout_height="wrap_content"
+            	    android:src="@drawable/goto_icon"
+            	    android:background="@android:color/transparent"
+            	    android:layout_marginRight="10dp"
+            	    android:layout_gravity="right"/>
+        </LinearLayout>
+      <TextView android:layout_width="fill_parent"
+    	android:layout_height="3dp"
+    	android:background="#afdaff"
+    	android:focusable="false"
+    />
+
+</LinearLayout>
+</FrameLayout>
+</ScrollView>

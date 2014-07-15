@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:id="@+id/scan_fragment"
+    
+        android:paddingTop="40dp"
+    	android:paddingLeft="35dp"
+    	android:paddingRight="35dp">
+
+    <Button
+        android:id="@+id/btn_scan_barcode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/normal_btn"
+            android:textColor="#fff"
+        android:text="开始扫描微金" />
+    <LinearLayout
+        android:id="@+id/scanResultLinearLayout_2rd_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫描结果："
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_scan_result"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scanWeiJinDetalLinearLayout_2rd_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:id="@+id/WeiJinInfoTable_2rd_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/StoreHint_2rd_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#2181b2"
+                    android:text="商户："
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/StoreName_2rd_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/ObjectInfoHInt_2rd_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#2181b2"
+                    android:text="消费信息："
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/ObjectInfo_2rd_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"  
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/AmountHint_2rd_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#2181b2"
+                    android:text="可兑换微金："
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/Amount_2rd_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"  
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/CreateTimeHInt_2rd_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#2181b2"
+                    android:text="消费时间："
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/CreateTime_2rd_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"  
+                android:layout_marginBottom="5dp">
+
+                <TextView
+                    android:id="@+id/ScanTimeHint_2rd_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扫描时间："
+                    android:textColor="#2181b2"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/ScanTime_2rd_tab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="hello"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </TableRow>
+        </TableLayout>
+
+        
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/btnAddWeiJin_2rd_tab"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="添加微金" 
+            android:textColor="#fff"
+            android:background="@color/normal_btn"/>
+
+        <Button
+            android:id="@+id/btnCancelOrReturn_2rd_tab"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="取消" 
+            android:textColor="#fff"
+            android:background="@color/normal_btn"/>
+    </LinearLayout>
+     </LinearLayout>
