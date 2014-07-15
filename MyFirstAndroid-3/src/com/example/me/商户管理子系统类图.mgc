@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <Class name="com.example.entity.McPreferentialItem" x="205" y="260">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.example.find.McNearbyActivity" x="857" y="607">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.example.find.ShowMcPrefInfoActivity" x="96" y="501">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.example.entity.McPreferentialItem"
+            endpointName="mcPreferentialItem" kind="Simple"/>
+    </Class>
+    <Class name="com.example.find.ShowMcPrefInfoActivity.StartMc"
+        x="462" y="330">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.example.entity.McItem"
+            endpointName="item" kind="Simple"/>
+    </Class>
+    <Class name="com.example.find.SubscribedMcActivity" x="572" y="601">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Extension destinationClassName="com.example.find.McActivity"/>
+    </Class>
+    <Class name="com.example.find.McActivity" x="591" y="367">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.example.entity.McItem"
+            endpointName="mcInfoList" kind="Simple"/>
+        <Association
+            destinationClassName="com.example.find.MyListAdapter"
+            endpointName="adapter" kind="Simple"/>
+    </Class>
+    <Class name="com.example.find.ShowMcPrefListActivity.FindMcPref"
+        x="232" y="669">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.example.entity.McPreferentialItem"
+            endpointName="result" kind="Simple"/>
+    </Class>
+    <Class name="com.example.find.SubscribedMcActivity.ChangeSubs1"
+        x="470" y="685">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.example.entity.McItem"
+            endpointName="item" kind="Simple"/>
+    </Class>
+    <Class name="com.example.find.ShowMcInfoActivity" x="386" y="116">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.example.entity.McItem"
+            endpointName="mcItem" kind="Simple"/>
+        <Communication destinationClassName="com.example.entity.McItem"/>
+    </Class>
+    <Class name="com.example.find.ShowMcPrefListActivity" x="-57" y="433">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.example.entity.McPreferentialItem"
+            endpointName="allPrefInfo" kind="Simple"/>
+        <Association
+            destinationClassName="com.example.find.MyPostInfoListAdapter"
+            endpointName="adapter" kind="Simple"/>
+    </Class>
+    <Class name="com.example.find.MyListAdapter" x="748" y="193">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.example.find.McActivity"
+            endpointName="context" kind="Simple"/>
+        <Association destinationClassName="com.example.entity.McItem"
+            endpointName="list" kind="Simple"/>
+        <Communication destinationClassName="com.example.entity.McItem"/>
+        <Communication destinationClassName="com.example.find.McActivity"/>
+    </Class>
+    <Class name="com.example.myfirstandroid.WeibaoFragment.FindMcPref"
+        x="391" y="212">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.example.entity.McPreferentialItem"
+            endpointName="result" kind="Simple"/>
+    </Class>
+    <Class name="com.example.entity.McItem" x="317" y="397">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+    </Class>
+    <Class name="com.example.find.McActivity.ChangeSubs" x="500" y="511">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.example.entity.McItem"
+            endpointName="item" kind="Simple"/>
+    </Class>
+    <Class name="com.example.myfirstandroid.WeibaoFragment" x="47" y="50">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.example.entity.McPreferentialItem"
+            endpointName="allPrefInfo" kind="Simple"/>
+        <Association
+            destinationClassName="com.example.find.MyPostInfoListAdapter"
+            endpointName="adapter" kind="Simple"/>
+    </Class>
+    <Class name="com.example.find.McActivity.FindMc" x="333" y="604">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association destinationClassName="com.example.entity.McItem"
+            endpointName="result" kind="Simple"/>
+    </Class>
+    <Class name="com.example.find.MyPostInfoListAdapter" x="-16" y="321">
+        <AttributesDisplayFilter public-accepted="true"
+            private-accepted="true" protected-accepted="true"
+            default-accepted="true" static-accepted="false"/>
+        <MethodDisplayFilter public-accepted="true"
+            private-accepted="false" protected-accepted="false"
+            default-accepted="false" static-accepted="false"
+            accessors-accepted="false" constructors-accepted="false"/>
+        <Association
+            destinationClassName="com.example.entity.McPreferentialItem"
+            endpointName="list" kind="Simple"/>
+    </Class>
+</ClassDiagram>

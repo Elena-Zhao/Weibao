@@ -1,0 +1,109 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+     >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+
+    <EditText
+        android:id="@+id/account"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="60dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:ems="10"
+        android:hint="@string/edit_account"
+        android:textColorHint="#dcdcdc"
+        android:drawableLeft="@drawable/account_icon"
+        android:background="@drawable/input_bg"
+        >
+		
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:drawableLeft="@drawable/password_icon"
+        android:hint="@string/edit_password"
+        android:textColorHint="#dcdcdc"
+        android:background="@drawable/input_bg"
+        />
+
+        <RadioButton 
+        android:layout_marginBottom="20dp"
+    	android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:id="@+id/radio_rem_key" 
+        android:layout_width="wrap_content" 
+        android:text="记住我"
+        android:textColor="#173954"
+        android:layout_height="wrap_content" 
+        android:checked="false"
+        android:layout_marginRight="15dp"
+        android:button="@drawable/checkbox_false"
+        android:onClick="RemKey"
+        />
+        
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp">
+        <ImageButton 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@drawable/forget_password_icon"
+        android:onClick="findPassword"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:paddingBottom="30dp"
+        android:text="@string/forgetpassword_button"
+        android:textSize="15sp"
+        android:textColor="#50c0f9"
+        android:background="@android:color/transparent"
+        android:onClick="findPassword"
+        />
+    
+    </LinearLayout>
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_button"
+        android:textColor="#ffffff"
+        android:background="@drawable/login_btn_bg"
+        android:onClick="logIn"
+        />
+        
+</LinearLayout>
+<ProgressBar
+    android:id="@+id/wait_login"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    />
+
+
+</FrameLayout>

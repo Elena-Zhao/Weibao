@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"
+    android:id="@+id/bill_layout"
+    android:descendantFocusability="blocksDescendants">  
+
+    <Button 
+        android:focusable="false"
+        android:id="@+id/exchange_bill_btn"
+        android:layout_width="30dp"
+        android:layout_height="45dp"
+        android:background="@color/exchange_bg"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        />
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="10dp">
+
+    <TextView
+         android:focusable="false"
+        android:id="@+id/store_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000" 
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView
+         android:focusable="false"
+        android:id="@+id/bill_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:textSize="30sp"
+        android:textColor="#e9360d" 
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"/>
+    <TextView
+         android:focusable="false"
+        android:id="@+id/bill_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#687c86" 
+        android:layout_alignParentBottom="true"
+        />
+
+    
+    </RelativeLayout>
+
+</RelativeLayout>

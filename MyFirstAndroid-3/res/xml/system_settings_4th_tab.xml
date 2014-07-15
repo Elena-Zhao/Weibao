@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory
+        android:key="message_settings"
+        android:title="新消息提醒" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="isReceiveMessage"
+            android:summary="选择接收已订阅商户推送的新消息"
+            android:title="接收商户消息" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="isReceiveFriendsMessage"
+            android:summary="选择接收朋友圈推送的新消息"
+            android:title="朋友圈照片更新" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="sound_settings"
+        android:title="声音" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="isSoundOn"
+            android:summary="开启声音"
+            android:title="声音" />
+
+        <RingtonePreference
+            android:dependency="isSoundOn"
+            android:key="chooseRing"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:title="铃声" 
+            />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="isBeepOn"
+            android:summary="开启震动"
+            android:title="震动" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="weibao_settings"
+        android:title="关于微宝" >
+        <Preference android:title="微宝介绍" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="http://www.vbao365.com/index.php?action=weibaoInfo" />
+        </Preference>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="isReceiveWeibaoNotice"
+            android:summary="选择是否接收系统通知"
+            android:title="接收系统通知" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

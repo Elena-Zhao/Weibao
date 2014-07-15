@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="15dp"
+        android:orientation="vertical" >
+   
+            <TextView
+        	android:id="@+id/all_btn"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:paddingLeft="@dimen/activity_horizontal_margin"
+    		android:paddingRight="@dimen/activity_horizontal_margin"
+        	android:text="@string/all_bussiness" 
+        	android:textColor="#050809"
+        	android:textSize="15sp"
+        	android:gravity="center_vertical"
+        	android:drawableLeft="@drawable/bills_icon"
+    		android:drawablePadding="15dp"
+    		android:drawableRight="@drawable/goto_icon"
+        	/>
+            <TextView android:layout_width="fill_parent"
+    		android:layout_height="2dp"
+    		android:layout_marginTop="10dp"
+    		android:layout_marginBottom="10dp"
+    		android:background="#3fa8de"
+    		android:focusable="false"
+    		/>
+            <TextView
+        	android:id="@+id/subscription_btn"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:paddingLeft="@dimen/activity_horizontal_margin"
+    		android:paddingRight="@dimen/activity_horizontal_margin"
+        	android:text="@string/subscription_bussiness" 
+        	android:textColor="#050809"
+        	android:textSize="15sp"
+        	android:gravity="center_vertical"
+        	android:drawableLeft="@drawable/bills_icon"
+    		android:drawablePadding="15dp"
+    		android:drawableRight="@drawable/goto_icon"
+        	/>
+            <TextView android:layout_width="fill_parent"
+    		android:layout_height="2dp"
+    		android:layout_marginTop="10dp"
+    		android:layout_marginBottom="10dp"
+    		android:background="#3fa8de"
+    		android:focusable="false"
+    		/>
+            <TextView
+        	android:id="@+id/nearby_btn"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:paddingLeft="@dimen/activity_horizontal_margin"
+    		android:paddingRight="@dimen/activity_horizontal_margin"
+        	android:text="@string/nearby_bussiness" 
+        	android:textColor="#050809"
+        	android:textSize="15sp"
+        	android:gravity="center_vertical"
+        	android:drawableLeft="@drawable/bills_icon"
+    		android:drawablePadding="15dp"
+    		android:drawableRight="@drawable/goto_icon"
+        	/>
+             <TextView android:layout_width="fill_parent"
+    		android:layout_height="2dp"
+    		android:layout_marginTop="10dp"
+    		android:layout_marginBottom="10dp"
+    		android:background="#3fa8de"
+    		android:focusable="false"
+    		/>     		
+   		
+		
+    </LinearLayout>

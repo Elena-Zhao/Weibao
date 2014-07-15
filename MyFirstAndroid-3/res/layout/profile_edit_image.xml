@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation ="vertical"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    >
+    <com.example.myfirstandroid.ProfileImageView
+        android:id="@+id/imageAvatarView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+         />
+
+    <Button
+        android:id="@+id/btnAvatarTakePictureNow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/MakeAvatarButtonText" 
+        android:background="@color/normal_btn"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/btnAvatarGetLocalPicture"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/GetAvatarButtonText"  
+        android:background="@color/normal_btn"
+        android:textColor="#fff"/>
+
+    <Button
+        android:id="@+id/btnCancelChangeAvatar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/CancelButtonText"  
+        android:background="@color/normal_btn"
+        android:textColor="#fff"/>
+
+</LinearLayout>
